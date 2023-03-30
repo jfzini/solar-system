@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PlanetCard from './PlanetCard';
 import Title from './Title';
 
 class SolarSystem extends Component {
@@ -6,6 +7,7 @@ class SolarSystem extends Component {
     return (
       <div data-testid="solar-system">
         <Title headline="Planetas" />
+        <PlanetCard />
       </div>
     );
   }
