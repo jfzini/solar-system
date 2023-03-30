@@ -7,11 +7,11 @@ import SolarSystem from './components/SolarSystem';
 class App extends React.Component {
   render() {
     return (
-      <>
+      <div className="page__container">
         <Header />
         <SolarSystem />
         <Missions />
-      </>
+      </div>
     );
   }
 }

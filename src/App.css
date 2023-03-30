@@ -1,3 +1,204 @@
+* {
+  box-sizing: border-box;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+}
+
+.page__container {
+  background-image: url('./images/background.png');
+  width: 100%;
+}
+
+.solar-system__container {
+  height: 1000px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+h1 {
+  font-family: Space Age , sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-family: Space Age , sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  padding: 40px;
+  text-align: center;
+}
+
+hr {
+  margin: -21px;
+  width: 400px;
+}
+
+li {
+  list-style: none;
+}
+
+.planet__image {
+  width: 50px;
+}
+
+.planet__card, .Sun {
+  height: 100px;
+  position: absolute;
+  text-align: center;
+  width: 100px;
+}
+
+.mission__wrapper {
+  background-color: rgba(255, 255, 255, 0.082);
+  border-radius: 20px;
+  box-shadow: 0 0 20px black;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.mission__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mission__card {
+  background-color: rgba(0, 0, 0, 0.555);
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.623);
+  height: 150px;
+  margin: 20px;
+  text-align: center;
+  width: 400px;
+}
+
+.mission__card--infos {
+  align-items: center;
+  display: flex;
+  font-size: 17px;
+  height: 50px;
+  justify-content: space-between;
+  margin-bottom: -5px;
+}
+
+.material-symbols-outlined {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.mission__card--content {
+  display: flex;
+  flex-direction: column;
+  font-family: Myriad Pro , sans-serif;
+  font-size: 20px;
+  height: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  text-shadow: 0 0 10px black , 0 0 10px black;
+}
+
+.mission__card--name {
+  font-size: 32px;
+}
+
+.Sun {
+  left: 48%;
+  top: 34%;
+}
+
+.Sun img {
+  width: 100px;
+}
+
+.Mercúrio {
+  animation: orbit 1s linear infinite;
+  left: 48%;
+  top: 29%;
+  transform-origin: 50% 100px;
+}
+
+.Mercúrio img {
+  width: 40px;
+}
+
+.Vênus {
+  animation: orbit 2.6s linear infinite;
+  left: 48%;
+  top: 25%;
+  transform-origin: 50% 150px;
+}
+
+.Terra {
+  animation: orbit 4.14s linear infinite;
+  left: 48%;
+  top: 21%;
+  transform-origin: 50% 200px;
+}
+
+.Marte {
+  animation: orbit 7.8s linear infinite;
+  left: 48%;
+  top: 17%;
+  transform-origin: 50% 250px;
+}
+
+.Marte img {
+  width: 45px;
+}
+
+.Júpiter {
+  animation: orbit 49s linear infinite;
+  left: 48%;
+  top: 13%;
+  transform-origin: 50% 300px;
+}
+
+.Júpiter img {
+  width: 70px;
+}
+
+.Saturno {
+  animation: orbit 122s linear infinite;
+  left: 48%;
+  top: 9%;
+  transform-origin: 50% 350px;
+}
+
+.Saturno img {
+  width: 60px;
+}
+
+.Urano {
+  animation: orbit 348s linear infinite;
+  left: 48%;
+  top: 5%;
+  transform-origin: 50% 400px;
+}
+
+.Netuno {
+  animation: orbit 683s linear infinite;
+  left: 48%;
+  top: 1%;
+  transform-origin: 50% 450px;
+}
+
+@keyframes orbit {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }

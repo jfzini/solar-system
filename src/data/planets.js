@@ -8,6 +8,7 @@ import Uranoimg from '../images/Urano.png';
 import Netunoimg from '../images/Netuno.png';
 
 const Planets = [
+  { name: 'Sun', image: 'https://www.solarsystemscope.com/spacepedia/images/handbook/renders/sun.png' },
   { name: 'Mercúrio', image: MercurioImg },
   { name: 'Vênus', image: VenusImg },
   { name: 'Terra', image: TerraImg },

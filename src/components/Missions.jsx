@@ -6,11 +6,11 @@ import MissionCard from './MissionCard';
 class Missions extends Component {
   render() {
     return (
-      <div data-testid="missions">
+      <div data-testid="missions" className="mission__wrapper">
         <Title headline="Missões" />
-        <ul>
-          <li>
-            {MissionsData.map(({ name, year, country, destination }) => (
+        <ul className="mission__container">
+          {MissionsData.map(({ name, year, country, destination }) => (
+            <li className="mission__card">
               <MissionCard
                 key={ name }
                 name={ name }
@@ -18,8 +18,8 @@ class Missions extends Component {
                 country={ country }
                 destination={ destination }
               />
-            ))}
-          </li>
+            </li>
+          ))}
         </ul>
       </div>
     );
