@@ -6,7 +6,7 @@ class MissionCard extends Component {
     const { name, year, country, destination } = this.props;
     return (
       <div data-testid="mission-card" className="mission__card--content">
-        <p data-testid="mission-name" className="mission__card--name">{name}</p>
+        <p data-testid="mission-name" className="mission__card--name">{name.toUpperCase()}</p>
         <hr />
         <div className="mission__card--infos">
           <div className="mission__card--infos">
