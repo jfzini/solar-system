@@ -121,7 +121,7 @@ li {
 }
 
 .Mercúrio {
-  animation: orbit 1s linear infinite;
+  animation: orbit 2s linear infinite;
   left: 48%;
   top: 29%;
   transform-origin: 50% 100px;
@@ -132,21 +132,21 @@ li {
 }
 
 .Vênus {
-  animation: orbit 2.6s linear infinite;
+  animation: orbit 5.2s linear infinite;
   left: 48%;
   top: 25%;
   transform-origin: 50% 150px;
 }
 
 .Terra {
-  animation: orbit 4.14s linear infinite;
+  animation: orbit 8.3s linear infinite;
   left: 48%;
   top: 21%;
   transform-origin: 50% 200px;
 }
 
 .Marte {
-  animation: orbit 7.8s linear infinite;
+  animation: orbit 15.6s linear infinite;
   left: 48%;
   top: 17%;
   transform-origin: 50% 250px;
@@ -157,7 +157,7 @@ li {
 }
 
 .Júpiter {
-  animation: orbit 49s linear infinite;
+  animation: orbit 98s linear infinite;
   left: 48%;
   top: 13%;
   transform-origin: 50% 300px;
@@ -168,7 +168,7 @@ li {
 }
 
 .Saturno {
-  animation: orbit 122s linear infinite;
+  animation: orbit 244s linear infinite;
   left: 48%;
   top: 9%;
   transform-origin: 50% 350px;
@@ -179,14 +179,14 @@ li {
 }
 
 .Urano {
-  animation: orbit 348s linear infinite;
+  animation: orbit 796s linear infinite;
   left: 48%;
   top: 5%;
   transform-origin: 50% 400px;
 }
 
 .Netuno {
-  animation: orbit 683s linear infinite;
+  animation: orbit 1300s linear infinite;
   left: 48%;
   top: 1%;
   transform-origin: 50% 450px;
