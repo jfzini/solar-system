@@ -9,13 +9,13 @@ class SolarSystem extends Component {
     return (
       <div data-testid="solar-system">
         <div className="no__show">
-          <Title headline="Planetas"/>
+          <Title headline="Planetas" />
         </div>
         <ul className="solar-system__container">
           <Sun />
           {
             Planets.map(({ name, image }) => (
-              <li key={ name } >
+              <li key={ name }>
                 <PlanetCard planetName={ name } planetImage={ image } key={ name } />
               </li>
             ))
