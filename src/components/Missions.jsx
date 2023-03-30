@@ -10,7 +10,7 @@ class Missions extends Component {
         <Title headline="Missões" />
         <ul className="mission__container">
           {MissionsData.map(({ name, year, country, destination }) => (
-            <li className="mission__card">
+            <li className="mission__card" key={ name }>
               <MissionCard
                 key={ name }
                 name={ name }

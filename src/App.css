@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  color: white;
+  color: whitesmoke;
   margin: 0;
   padding: 0;
 }
@@ -19,6 +19,10 @@
   margin: 0 auto;
   position: relative;
   width: 100%;
+}
+
+.no__show {
+  display: none;
 }
 
 h1 {
@@ -58,7 +62,7 @@ li {
 }
 
 .mission__wrapper {
-  background-color: rgba(255, 255, 255, 0.082);
+  background-color: rgba(255, 255, 255, 0.075);
   border-radius: 20px;
   box-shadow: 0 0 20px black;
   margin: 0 auto;
@@ -73,9 +77,9 @@ li {
 
 .mission__card {
   background-color: rgba(0, 0, 0, 0.555);
-  border: 1px solid white;
+  border: 1px solid whitesmoke;
   border-radius: 20px;
-  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.623);
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.623);
   height: 150px;
   margin: 20px;
   text-align: center;
