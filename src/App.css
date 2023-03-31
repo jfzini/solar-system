@@ -117,7 +117,7 @@ li {
 
 .Sun {
   left: 48%;
-  top: 34%;
+  top: 36%;
 }
 
 .Sun img {
@@ -127,7 +127,7 @@ li {
 .Mercúrio {
   animation: orbit 2s linear infinite;
   left: 48%;
-  top: 29%;
+  top: 31%;
   transform-origin: 50% 100px;
 }
 
@@ -138,21 +138,21 @@ li {
 .Vênus {
   animation: orbit 5.2s linear infinite;
   left: 48%;
-  top: 25%;
+  top: 27%;
   transform-origin: 50% 150px;
 }
 
 .Terra {
   animation: orbit 8.3s linear infinite;
   left: 48%;
-  top: 21%;
+  top: 24%;
   transform-origin: 50% 200px;
 }
 
 .Marte {
   animation: orbit 15.6s linear infinite;
   left: 48%;
-  top: 17%;
+  top: 20%;
   transform-origin: 50% 250px;
 }
 
@@ -168,7 +168,7 @@ li {
 }
 
 .Júpiter img {
-  width: 70px;
+  width: 60px;
 }
 
 .Saturno {
