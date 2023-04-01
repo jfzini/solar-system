@@ -25,15 +25,8 @@
   display: none;
 }
 
-h1 {
-  font-family: Space Age , sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  padding: 40px;
-  text-align: center;
-}
-
-h2 {
+h1, h2 {
+  animation: appear 4s ease-in , slideDown 4s ease-in-out;
   font-family: Space Age , sans-serif;
   font-size: 60px;
   font-weight: 400;
@@ -204,5 +197,27 @@ li {
 
   to {
     transform: rotate(-360deg);
+  }
+}
+
+@keyframes appear {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+
+  from {
+    transform: translateY(-40px);
+  }
+
+  to {
+    transform: translateY(0);
   }
 }
