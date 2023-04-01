@@ -91,7 +91,7 @@ li {
 }
 
 .mission__card:hover, a:hover {
-  background-color: rgba(245, 245, 245, 0.637);
+  background-color: rgba(245, 245, 245, 0.767);
   border-color: black;
   box-shadow: 1px 1px 5px black;
   color: black;
@@ -206,6 +206,19 @@ li {
   left: 48%;
   top: 1%;
   transform-origin: 50% 450px;
+}
+
+footer {
+  align-items: center;
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  font-family: Myriad Pro , sans-serif;
+  font-size: 20px;
+  height: 80px;
+  justify-content: center;
+  margin-top: 60px;
+  width: 100%;
 }
 
 @keyframes orbit {
