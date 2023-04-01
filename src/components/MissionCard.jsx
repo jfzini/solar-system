@@ -5,9 +5,9 @@ class MissionCard extends Component {
   render() {
     const { name, year, country, destination, moreInfo } = this.props;
     return (
-      <section className="mission__card--content">
-        <a href={ moreInfo } target="_blank" rel="noreferrer">
-          <p className="mission__card--name">{name.toUpperCase()}</p></a>
+      <a href={ moreInfo } target="_blank" rel="noreferrer">
+        <section className="mission__card--content">
+          <p className="mission__card--name">{name.toUpperCase()}</p>
           <hr />
           <div className="mission__card--infos">
             <div className="mission__card--infos">
@@ -33,7 +33,8 @@ class MissionCard extends Component {
               </p>
             </div>
           </div>
-      </section>
+        </section>
+      </a>
     );
   }
 }

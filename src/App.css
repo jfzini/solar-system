@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200') ;
+
 * {
   box-sizing: border-box;
-  color: whitesmoke;
   margin: 0;
   padding: 0;
 }
@@ -27,11 +28,18 @@
 
 h1, h2 {
   animation: appear 4s ease-in , slideDown 4s ease-in-out;
+  color: whitesmoke;
   font-family: Space Age , sans-serif;
   font-size: 60px;
   font-weight: 400;
   padding: 40px;
   text-align: center;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 
 hr {
@@ -49,6 +57,7 @@ li {
 
 .planet__card, .Sun {
   height: 100px;
+  opacity: 0;
   position: absolute;
   text-align: center;
   width: 100px;
@@ -69,14 +78,24 @@ li {
 }
 
 .mission__card {
+  animation: appear 4s ease-in , slideDown 4s ease-in-out;
   background-color: rgba(0, 0, 0, 0.555);
   border: 1px solid whitesmoke;
   border-radius: 20px;
-  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.623);
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.582);
   height: 150px;
   margin: 20px;
   text-align: center;
+  transition: 0.3s ease-in-out;
   width: 400px;
+}
+
+.mission__card:hover, a:hover {
+  background-color: rgba(245, 245, 245, 0.637);
+  border-color: black;
+  box-shadow: 1px 1px 5px black;
+  color: black;
+  transform: scale(1.05);
 }
 
 .mission__card--infos {
@@ -101,7 +120,6 @@ li {
   height: 100%;
   justify-content: space-between;
   padding: 20px;
-  text-shadow: 0 0 10px black , 0 0 10px black;
 }
 
 .mission__card--name {
@@ -109,6 +127,7 @@ li {
 }
 
 .Sun {
+  animation: appear 1.5s ease-in forwards;
   left: 48%;
   top: 36%;
 }
@@ -118,7 +137,7 @@ li {
 }
 
 .Mercúrio {
-  animation: orbit 2s linear infinite;
+  animation: orbit 2s linear infinite , appear 1.5s ease-in 0.3s forwards;
   left: 48%;
   top: 31%;
   transform-origin: 50% 100px;
@@ -129,21 +148,21 @@ li {
 }
 
 .Vênus {
-  animation: orbit 5.2s linear infinite;
+  animation: orbit 5.2s linear infinite , appear 1.5s ease-in 0.6s forwards;
   left: 48%;
   top: 27%;
   transform-origin: 50% 150px;
 }
 
 .Terra {
-  animation: orbit 8.3s linear infinite;
+  animation: orbit 8.3s linear infinite , appear 1.5s ease-in 0.9s forwards;
   left: 48%;
   top: 24%;
   transform-origin: 50% 200px;
 }
 
 .Marte {
-  animation: orbit 15.6s linear infinite;
+  animation: orbit 15.6s linear infinite , appear 1.5s ease-in 1.2s forwards;
   left: 48%;
   top: 20%;
   transform-origin: 50% 250px;
@@ -154,7 +173,7 @@ li {
 }
 
 .Júpiter {
-  animation: orbit 98s linear infinite;
+  animation: orbit 98s linear infinite , appear 1.5s ease-in 1.5s forwards;
   left: 48%;
   top: 13%;
   transform-origin: 50% 300px;
@@ -165,7 +184,7 @@ li {
 }
 
 .Saturno {
-  animation: orbit 244s linear infinite;
+  animation: orbit 244s linear infinite , appear 1.5s ease-in 1.8s forwards;
   left: 48%;
   top: 9%;
   transform-origin: 50% 350px;
@@ -176,14 +195,14 @@ li {
 }
 
 .Urano {
-  animation: orbit 796s linear infinite;
+  animation: orbit 796s linear infinite , appear 1.5s ease-in 2.1s forwards;
   left: 48%;
   top: 5%;
   transform-origin: 50% 400px;
 }
 
 .Netuno {
-  animation: orbit 1300s linear infinite;
+  animation: orbit 1300s linear infinite , appear 1.5s ease-in 2.4s forwards;
   left: 48%;
   top: 1%;
   transform-origin: 50% 450px;
