@@ -8,7 +8,7 @@
 
 > First project using React. Used quite some transform css skills and keyframes in order to get the planets orbiting the Sun
 
-### ✨ [Demo](https://imgur.com/1jeeB32)
+### ✨ [Demo](https://solar-system-rho-lac.vercel.app/)
 
 ## Prerequisites
 
